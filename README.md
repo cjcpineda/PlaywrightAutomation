@@ -21,4 +21,3 @@ Test site: https://the-internet.herokuapp.com/login
 - 
 - https://playwright.dev/docs/locators Locators in Playwright are expressions or methods used to find and interact with elements on a web page, such as buttons, input fields, or links. They help your tests identify exactly which element to click, type into, or check for visibility
 - you can also use dev tool or ask your dev team to create a unique_id for elements
-- if you use an id, start with a # ie: `await page.locator('#someId').click;` 
