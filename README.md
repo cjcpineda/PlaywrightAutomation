@@ -26,6 +26,10 @@ Test site: https://the-internet.herokuapp.com/login
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+if you use an id, start with a # ie: `await page.locator('#someId').click;` 
+>>>>>>> Stashed changes
+=======
 if you use an id, start with a # ie: `await page.locator('#someId').click;` 
 >>>>>>> Stashed changes
 =======
