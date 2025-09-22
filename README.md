@@ -24,6 +24,10 @@ Test site: https://the-internet.herokuapp.com/login
 - you can also use dev tool or ask your dev team to create a unique_id for elements
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+if you use an id, start with a # ie: `await page.locator('#someId').click;` 
+>>>>>>> Stashed changes
+=======
 if you use an id, start with a # ie: `await page.locator('#someId').click;` 
 >>>>>>> Stashed changes
 =======
