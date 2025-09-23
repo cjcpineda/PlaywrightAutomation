@@ -1,7 +1,7 @@
 # PlaywrightAutomation
 
 ## Section 1
-playwright intro + env setup
+Playwright intro + env setup
 - playwright/test is a library that helps you write and run browser tests
 - run `npx playwright test` or `npx playwright codegen <url>`, playwright will automatically creates a `tests`, `playwright-report`, and it can create example test files if you run npx playwright test in a new project 
 Commands to run a test: 
@@ -18,7 +18,7 @@ Test site: https://the-internet.herokuapp.com/login
 - playwright inspector
 
 ## Section 3
-understand codegen code
+Understand codegen code
 - //test('Name of Test', async ({page}) => {})
 - https://playwright.dev/docs/locators Locators in Playwright are expressions or methods used to find and interact with elements on a web page, such as buttons, input fields, or links. They help your tests identify exactly which element to click, type into, or check for visibility
 - you can also use dev tool (search by typing `$$`) or ask your dev team to create a unique_id for elements
@@ -27,10 +27,12 @@ understand codegen code
 
 
 ## Section 4
-build clickMe webpage
+Build clickMe webpage
 - check out clickMe.html
 - building a simple HTML to understand html structure and adding a script
+- basic structure: `<tag attribute="value>content</tag>
 
 ## Section 5
 How to find Selectors
-- 
+We will focus on: 
+- selecting elements by id, class, tag name, attribute value, partial attribute value, visible text, playwright specific locators or by using ranorex selocity chrome plugin
