@@ -14,10 +14,25 @@ test.only("Learning selectors" , async ({page}) => {
     await page.locator('button.button-style').click();
 
     // 4. By Attribute Value
-    await page.locator('').click();
+    await page.locator('[data-action="increment"]').click();
+    await page.locator('[id="clickButton"]').click();
+    await page.locator('[class="button-style"]').click();
+
+    // 5. Partial attribute
+    await page.locator('[role*="but"]').click();
+
+    //6. By Text
+    await page.locator('text=CLICK ME').click();
+
+    //7. Combine selectors for precision, class & text
+    await page.locator('.button-style:text("CLICK ME")').click();
+
+    //8. has-text (partial text)
+    await page.locator('button:has-text("clic")').click();
+
+    //9. Attribute
+    await page.locator('[data-action="increment"]:text("CLICK ME")').click();
 
     await page.pause();
-
-
 
 })
