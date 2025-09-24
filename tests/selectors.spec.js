@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test'
 
-test.only("Learning selectors" , async ({page}) => {
+test("Learning selectors" , async ({page}) => {
     //navigate to the webpage
     await page.goto('http://127.0.0.1:5500/clickMe.html');
 
@@ -21,18 +21,27 @@ test.only("Learning selectors" , async ({page}) => {
     // 5. Partial attribute
     await page.locator('[role*="but"]').click();
 
-    //6. By Text
+    // 6. By Text
     await page.locator('text=CLICK ME').click();
 
-    //7. Combine selectors for precision, class & text
+    // 7. Combine selectors for precision, class & text
     await page.locator('.button-style:text("CLICK ME")').click();
 
-    //8. has-text (partial text)
+    // 8. has-text (partial text)
     await page.locator('button:has-text("clic")').click();
 
-    //9. Attribute
+    // 9. Attribute
     await page.locator('[data-action="increment"]:text("CLICK ME")').click();
 
+    // 10. Playwright locators https://playwright.dev/docs/locators 
+    //get by text
+    await page.getByText ('CLICK ME').click();
+    //get by role
+    await page.getByRole('button', {name: /click me/i}).click();
+    //assert the counter
+    await expect(page.locator('#counter')).toContainText('13');
+
     await page.pause();
+
 
 })
