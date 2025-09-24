@@ -19,7 +19,7 @@ Test site: https://the-internet.herokuapp.com/login
 
 ## Section 3
 Understand codegen code
-- //test('Name of Test', async ({page}) => {})
+- `//test('Name of Test', async ({page}) => {})`
 - https://playwright.dev/docs/locators Locators in Playwright are expressions or methods used to find and interact with elements on a web page, such as buttons, input fields, or links. They help your tests identify exactly which element to click, type into, or check for visibility
 - you can also use dev tool (search by typing `$$`) or ask your dev team to create a unique_id for elements
 - if you use an id, start with a # ie: `await page.locator('#someId').click;`
@@ -30,7 +30,7 @@ Understand codegen code
 Build clickMe webpage
 - check out clickMe.html
 - building a simple HTML to understand html structure and adding a script
-- basic structure: `<tag attribute="value>content</tag>
+- basic structure: `<tag attribute="value>content</tag>`
 
 breakdown of the html code (you will need this in section 5)
 1. id: Selects an element using its unique id attribute.
@@ -55,4 +55,11 @@ Example: text="CLICK ME" selects an element that shows "CLICK ME" on the page.
 How to find Selectors
 We will focus on: 
 - selecting elements by id, class, tag name, attribute value, partial attribute value, visible text, playwright specific locators or by using ranorex selocity chrome plugin
-- check out selectors.spec.js file
+- check out `selectors.spec.js` file for details
+- install Ranorex plugin to help detect selectors
+
+## Section 6
+Playwright Assertions
+- https://playwright.dev/docs/test-assertions 
+- check out `assertions.spec.js` practice page: https://the-internet.herokuapp.com/ 
+- test.describe is used to group related tests together
