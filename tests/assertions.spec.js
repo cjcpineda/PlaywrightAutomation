@@ -24,10 +24,25 @@ test.describe ("Learn assertions", () => {
         await page.pause();
 
     })
-    test.only('Continue with assertions Pt. 2', async ({page}) => {
+    test('Continue with assertions Pt. 2', async ({page}) => {
         await page.goto('https://the-internet.herokuapp.com/');
         //6. assert count- check how many links are present
         await expect(page.locator('a')).toHaveCount(46);
+
+        //7. to be checked
+        await page.goto('https://the-internet.herokuapp.com/checkboxes');
+        await page.getByRole('checkbox').nth(0).check();
+        await page.getByRole('checkbox').nth(1).uncheck();
+
+        //testing stability, ie below is to wait for 1sec 
+        await page.waitForTimeout(1000)
+        //ie below - is to wait for something before proceeding to the next code
+        let checkbox = await page.getByRole('checkbox').nth(0)
+        
+        //to verify - add assertions
+        await expect(page.getByRole('checkbox').nth(0)).toBeChecked();
+        await expect(page.getByRole('checkbox').nth(1)).not.toBeChecked();
+    
         await page.pause();
     })
 })
