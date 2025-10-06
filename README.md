@@ -63,3 +63,4 @@ Playwright Assertions
 - https://playwright.dev/docs/test-assertions Assertions are used to verify that your web application behaves as expected, such as checking if an element is visible, contains the correct text, or if a value matches what you expect
 - check out `assertions.spec.js` practice page: https://the-internet.herokuapp.com/ 
 - test.describe is used to group related tests together
+- know the difference between `page.get<>` and `expect` 

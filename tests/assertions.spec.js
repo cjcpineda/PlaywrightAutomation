@@ -45,4 +45,12 @@ test.describe ("Learn assertions", () => {
     
         await page.pause();
     })
+    test.only('Continue with Assertions Pt. 3', async ({page}) => {
+        await page.goto('https://the-internet.herokuapp.com/login');
+       
+        //8. have value
+        await page.locator('#username').fill('tomsmith');
+        await expect(page.locator('#username')).toHaveValue('tomsmith');
+    })
+
 })
