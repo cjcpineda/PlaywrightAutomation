@@ -11,7 +11,7 @@ Commands to run a test:
 ## Section 2
 Codegen with playwright
 Test site: https://the-internet.herokuapp.com/login
-- `npx playwright codegen https://the-internet.herokuapp.com/login`  launches Playwright's interactive code generation tool. It records your actions (clicks, typing, etc.). Playwright automatically generates test code (usually in JavaScript, TypeScript, Python, or C#) that you can use for automated browser testing
+- `npx playwright codegen https://the-internet.herokuapp.com/login`  launches Playwright Inspector. It records your actions (clicks, typing, etc.). Playwright automatically generates test code (usually in JavaScript, TypeScript, Python, or C#) that you can use for automated browser testing
 - hit record to track actions and the "eye-icon" for assertion. copy & paste into js file
 - check out codegen_login.spec.js 
 - run `npx playwright test --headed`
@@ -64,3 +64,14 @@ Playwright Assertions
 - check out `assertions.spec.js` practice page: https://the-internet.herokuapp.com/ 
 - test.describe is used to group related tests together
 - know the difference between `page.get<>` and `expect` 
+
+## Section 7
+Some examples of running playwright tests (ui runner, smoke test, running test project level or global level, etc.)
+- running all tests `npx playwright test` 
+- running a specific file: `npx playwright test <folder/filename>` 
+- running by tags checkout assertions.spec.js , `@ assertions_group` or `@smoke` are tags: `...test --grep "@smoke" `
+- vs code extension (the flask icon), you can run the projects here. Under projects on the bottom left corner, you can select which browser you want to test. You can enable/ disabled browsers through the playwright.config.js file
+- script in package.json ie. 
+```"scripts":{"test:smoke":"npx playwright test --grep'@smoke'",
+"test:regression":"npx playwright test --grep'@regression'"}```
+then in the terminal run `npx run test:smoke` 
