@@ -66,12 +66,22 @@ Playwright Assertions
 - know the difference between `page.get<>` and `expect` 
 
 ## Section 7
-Some examples of running playwright tests (ui runner, smoke test, running test project level or global level, etc.)
+Some examples of running playwright tests (ui runner, smoke test, running test project level or global level, etc.) and discussing config file
 - running all tests `npx playwright test` 
 - running a specific file: `npx playwright test <folder/filename>` 
 - running by tags checkout assertions.spec.js , `@ assertions_group` or `@smoke` are tags: `...test --grep "@smoke" `
 - vs code extension (the flask icon), you can run the projects here. Under projects on the bottom left corner, you can select which browser you want to test. You can enable/ disabled browsers through the playwright.config.js file
-- script in package.json ie. 
-```"scripts":{"test:smoke":"npx playwright test --grep'@smoke'",
-"test:regression":"npx playwright test --grep'@regression'"}```
-then in the terminal run `npx run test:smoke` 
+- script in package.json (example below) then in the terminal run `npx run test:smoke` 
+```"scripts":{"test:smoke":"npx playwright test --grep \"@smoke\"",
+"test:regression":"npx playwright test --grep'@regression'"}
+```
+- `playwright.config.js` The config file is like a settings menu for your Playwright tests. You can change how tests run without editing each test file. It lets you define things like:
+  - Which browsers to test (Chromium, Firefox, WebKit)
+  - Test timeouts and retries
+  - Test directory and file patterns
+  - Base URL for your tests (you wont have to add the whole URL , just add `(/)` after await page.goto)
+  - Reporter options (how results are shown)
+  - Global setup or teardown step
+
+## Section 8
+
