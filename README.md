@@ -84,4 +84,13 @@ Some examples of running playwright tests (ui runner, smoke test, running test p
   - Global setup or teardown step
 
 ## Section 8
+In Playwright, the built-in {page} is a fixture. Fixtures automatically set up and tear down resources needed for tests. Built in {page} provides a fresh page tab in a specific browser within a browser context for each test. It ensures that each test runs in isolation.
+However, sometimes you may need to set up the browser and context yourself to customize the configuration or manage multiple contexts. You can do this manually and organize the process using hooks such as beforeAll, afterAll, beforeEach, and afterEach:
+  - beforeAll - hook is used to execute code before any tests in the test suite run. 
+  - afterAll - hook is used to execute code after all tests in the test suite have finished
+  - beforeEach - hook is used to execute code before each individual test runs.
+  - afterEach - hook is used to execute code after each individual test has finished.
 
+Hooks can be used for many things, like initialize and clean up test data before and after tests or perform login operations and store session tokens or cookies. In this lesson we will look into using hooks specifically for manual page setup and tear down.
+
+- Before sec. 8, we used ({page}) which was from playwright. Now, we manually created the `hooksAndPage.spec.js` file 
