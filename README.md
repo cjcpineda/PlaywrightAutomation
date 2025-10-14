@@ -94,3 +94,4 @@ However, sometimes you may need to set up the browser and context yourself to cu
 Hooks can be used for many things, like initialize and clean up test data before and after tests or perform login operations and store session tokens or cookies. In this lesson we will look into using hooks specifically for manual page setup and tear down.
 
 - Before sec. 8, we used ({page}) which was from playwright. Now, we manually created the `hooksAndPage.spec.js` file 
+- You can set your location in chrome under elements/ sensors --- check out the geolocation test
