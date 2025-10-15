@@ -66,6 +66,7 @@ Playwright Assertions
 - know the difference between `page.get<>` and `expect` 
 
 ## Section 7
+Running Tests & Config
 Some examples of running playwright tests (ui runner, smoke test, running test project level or global level, etc.) and discussing config file
 - running all tests `npx playwright test` 
 - running a specific file: `npx playwright test <folder/filename>` 
@@ -97,4 +98,8 @@ Before sec. 8, we used ({page}) which was from playwright. Now, we manually crea
 
 Notes:
 - You can set your location in chrome under elements/ sensors --- check out the geolocation test
-- `test.descibe` 
+- `test.descibe` is used to group related tests together (beforeAll, beforeEach) and teardown (afterEach, afterAll)
+
+## Section 9
+#### Page Object Model
+

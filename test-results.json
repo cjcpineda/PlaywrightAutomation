@@ -51,7 +51,7 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.55.0",
     "workers": 4,
     "webServer": null
@@ -72,7 +72,7 @@
           "specs": [
             {
               "title": "A/B Test",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -83,11 +83,30 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 755,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 763,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"A/B Test \u001b[7mControl\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"A/B Test \u001b[7mVariation 1\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"A/B Test \u001b[7mControl\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"A/B Test \u001b[7mVariation 1\u001b[27m\"\u001b[39m\n    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:44:24",
+                        "location": {
+                          "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
+                          "column": 24,
+                          "line": 44
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 42 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=\"A/B Testing\"'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m         \u001b[36mconst\u001b[39m header \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtextContent(\u001b[32m'h3'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m         expect(header)\u001b[33m.\u001b[39mtoBe(\u001b[32m'A/B Test Control'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     })\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
+                            "column": 24,
+                            "line": 44
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"A/B Test \u001b[7mControl\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"A/B Test \u001b[7mVariation 1\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 42 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=\"A/B Testing\"'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m         \u001b[36mconst\u001b[39m header \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtextContent(\u001b[32m'h3'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m         expect(header)\u001b[33m.\u001b[39mtoBe(\u001b[32m'A/B Test Control'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     })\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:44:24\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "BEFORE ALL HOOK LAUNCHED CHROMIUM BROWSER\n"
@@ -97,16 +116,30 @@
                         },
                         {
                           "text": "AFTER EACH CLOSED PAGE\n"
+                        },
+                        {
+                          "text": "AFTER ALL HOOK CLOSED BROWSER\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-15T17:43:38.722Z",
+                      "startTime": "2025-10-15T17:42:59.612Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/cjcpineda/Desktop/PlaywrightAutomation/test-results/hooksAndPage-Describe-block-for-hooks-A-B-Test-chromium/test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
+                        "column": 24,
+                        "line": 44
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "0031a1d1e346d8daaca2-2b20a301bf884b424657",
@@ -127,10 +160,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "interrupted",
-                      "duration": 9828,
+                      "duration": 2708234,
                       "error": {
                         "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Checkboxes\"')\u001b[22m\n",
                         "stack": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Checkboxes\"')\u001b[22m\n\n    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:48:20",
@@ -139,7 +172,7 @@
                           "column": 20,
                           "line": 48
                         },
-                        "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=Checkboxes\"'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mconst\u001b[39m checkbox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39misChecked(\u001b[32m'input [type=\"checkbox\"]:first-child'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m         expect(checkbox)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     })\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=Checkboxes'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mconst\u001b[39m checkbox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39misChecked(\u001b[32m'input [type=\"checkbox\"]:first-child'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m         expect(checkbox)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     })\u001b[0m"
                       },
                       "errors": [
                         {
@@ -148,10 +181,13 @@
                             "column": 20,
                             "line": 48
                           },
-                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Checkboxes\"')\u001b[22m\n\n\n\u001b[0m \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=Checkboxes\"'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mconst\u001b[39m checkbox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39misChecked(\u001b[32m'input [type=\"checkbox\"]:first-child'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m         expect(checkbox)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     })\u001b[0m\n\u001b[2m    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:48:20\u001b[22m"
+                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Checkboxes\"')\u001b[22m\n\n\n\u001b[0m \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=Checkboxes'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mconst\u001b[39m checkbox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39misChecked(\u001b[32m'input [type=\"checkbox\"]:first-child'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m         expect(checkbox)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     })\u001b[0m\n\u001b[2m    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:48:20\u001b[22m"
                         }
                       ],
                       "stdout": [
+                        {
+                          "text": "BEFORE ALL HOOK LAUNCHED CHROMIUM BROWSER\n"
+                        },
                         {
                           "text": "BEFORE EACH LAUNCHED NEW PAGE\n"
                         },
@@ -164,7 +200,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-15T17:43:39.807Z",
+                      "startTime": "2025-10-15T17:43:01.181Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -215,11 +251,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-15T17:43:37.679Z",
-    "duration": 12040.26000000001,
-    "expected": 1,
+    "startTime": "2025-10-15T17:42:59.108Z",
+    "duration": 2710653.972,
+    "expected": 0,
     "skipped": 2,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
