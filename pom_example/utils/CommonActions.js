@@ -5,7 +5,7 @@
 
     //navigating to a URL
     async navigate(url){
-        await this.page.pause();
+        //await this.page.pause();
         await this.page.goto(url)
     }
 
@@ -21,7 +21,7 @@
 
     //getting a text within an element
     async getText(selector){
-        return await this.page.textContext(selector)
+        return await this.page.textContent(selector)
     }
 
     //checkmark

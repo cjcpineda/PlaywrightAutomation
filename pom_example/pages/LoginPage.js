@@ -16,4 +16,13 @@ export default class LoginPage {
         await this.actions.fill('#password', password);
         await this.actions.click('button[type=submit]')
     }
+
+    //invalid login
+    async geterrorMessage(){
+        return await this.actions.getText('#flash')
+    }
+    async assertErrorMessage(expectedMessage) {
+        const actualMessage = await this.geterrorMessage()
+        expect(actualMessage).toContain(expectedMessage)
+    }
 }

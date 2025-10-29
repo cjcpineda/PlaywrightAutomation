@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -37,7 +37,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium",
         "name": "chromium",
@@ -57,6 +57,291 @@
     "webServer": null
   },
   "suites": [
+    {
+      "title": "assertions.spec.js",
+      "file": "assertions.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Learn assertions @assertions_group",
+          "file": "assertions.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify web page behavior @smoke",
+              "ok": true,
+              "tags": [
+                "assertions_group",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4524,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-29T20:09:33.397Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4cf67306dc47f75b569a-67560c2a5a8d7b445f63",
+              "file": "assertions.spec.js",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "Continue with Assertions @assertions_pt_1",
+              "ok": true,
+              "tags": [
+                "assertions_group",
+                "assertions_pt_1"
+              ],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "interrupted",
+                      "duration": 6776,
+                      "error": {
+                        "message": "Error: browserContext.close: Target page, context or browser has been closed",
+                        "stack": "Error: browserContext.close: Target page, context or browser has been closed"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserContext.close: Target page, context or browser has been closed"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-29T20:09:40.670Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4cf67306dc47f75b569a-8779a47b34db98a66603",
+              "file": "assertions.spec.js",
+              "line": 13,
+              "column": 9
+            },
+            {
+              "title": "Continue with assertions Pt. 2",
+              "ok": true,
+              "tags": [
+                "assertions_group"
+              ],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4cf67306dc47f75b569a-a45e432c0ea6c5f4c8cb",
+              "file": "assertions.spec.js",
+              "line": 24,
+              "column": 9
+            },
+            {
+              "title": "Continue with Assertions Pt. 3",
+              "ok": true,
+              "tags": [
+                "assertions_group"
+              ],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4cf67306dc47f75b569a-f32ac2d8eca9cb6410f6",
+              "file": "assertions.spec.js",
+              "line": 43,
+              "column": 9
+            },
+            {
+              "title": "Continue Assertions Pt. 4",
+              "ok": true,
+              "tags": [
+                "assertions_group"
+              ],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4cf67306dc47f75b569a-609ae9675a41a9561b91",
+              "file": "assertions.spec.js",
+              "line": 53,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "codegen_login.spec.js",
+      "file": "codegen_login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "This was generated by codegen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 10000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "interrupted",
+                  "duration": 11453,
+                  "error": {
+                    "message": "Error: browserContext.close: Target page, context or browser has been closed",
+                    "stack": "Error: browserContext.close: Target page, context or browser has been closed"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.close: Target page, context or browser has been closed"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-29T20:09:33.608Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "35743e1e24e4b1973c40-95cbc4c2be9891ed22f7",
+          "file": "codegen_login.spec.js",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "example.spec.js",
+      "file": "example.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 10000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "interrupted",
+                  "duration": 11736,
+                  "error": {
+                    "message": "Error: browserContext.close: Target page, context or browser has been closed",
+                    "stack": "Error: browserContext.close: Target page, context or browser has been closed"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: browserContext.close: Target page, context or browser has been closed"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-29T20:09:33.396Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
+          "file": "example.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 10000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
+          "file": "example.spec.js",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
     {
       "title": "hooksAndPage.spec.js",
       "file": "hooksAndPage.spec.js",
@@ -83,59 +368,48 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 763,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 2,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"A/B Test \u001b[7mControl\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"A/B Test \u001b[7mVariation 1\u001b[27m\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"A/B Test \u001b[7mControl\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"A/B Test \u001b[7mVariation 1\u001b[27m\"\u001b[39m\n    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:44:24",
+                        "message": "\u001b[31m\"beforeAll\" hook timeout of 10000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31m\"beforeAll\" hook timeout of 10000ms exceeded.\u001b[39m\n    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:10:10",
                         "location": {
                           "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
-                          "column": 24,
-                          "line": 44
+                          "column": 10,
+                          "line": 10
                         },
-                        "snippet": "\u001b[0m \u001b[90m 42 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=\"A/B Testing\"'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m         \u001b[36mconst\u001b[39m header \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtextContent(\u001b[32m'h3'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m         expect(header)\u001b[33m.\u001b[39mtoBe(\u001b[32m'A/B Test Control'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     })\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Describe block for hooks'\u001b[39m \u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeAll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m{\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[90m// launch chrome browser before all tests\u001b[39m\n \u001b[90m 12 |\u001b[39m         browser \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m chromium\u001b[33m.\u001b[39mlaunch({headless\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"BEFORE ALL HOOK LAUNCHED CHROMIUM BROWSER\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
-                            "column": 24,
-                            "line": 44
+                            "column": 10,
+                            "line": 10
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"A/B Test \u001b[7mControl\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"A/B Test \u001b[7mVariation 1\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 42 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=\"A/B Testing\"'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m         \u001b[36mconst\u001b[39m header \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtextContent(\u001b[32m'h3'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m         expect(header)\u001b[33m.\u001b[39mtoBe(\u001b[32m'A/B Test Control'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     })\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:44:24\u001b[22m"
+                          "message": "\u001b[31m\"beforeAll\" hook timeout of 10000ms exceeded.\u001b[39m\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Describe block for hooks'\u001b[39m \u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeAll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m{\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m         \u001b[90m// launch chrome browser before all tests\u001b[39m\n \u001b[90m 12 |\u001b[39m         browser \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m chromium\u001b[33m.\u001b[39mlaunch({headless\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"BEFORE ALL HOOK LAUNCHED CHROMIUM BROWSER\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:10:10\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
+                            "column": 23,
+                            "line": 37
+                          },
+                          "message": "TypeError: Cannot read properties of undefined (reading 'close')\n\n\u001b[0m \u001b[90m 35 |\u001b[39m     test\u001b[33m.\u001b[39mafterAll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 36 |\u001b[39m         \u001b[90m//closer browser\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m         \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mclose()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"AFTER ALL HOOK CLOSED BROWSER\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m     })\n \u001b[90m 40 |\u001b[39m\u001b[0m\n\u001b[2m    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:37:23\u001b[22m"
                         }
                       ],
-                      "stdout": [
-                        {
-                          "text": "BEFORE ALL HOOK LAUNCHED CHROMIUM BROWSER\n"
-                        },
-                        {
-                          "text": "BEFORE EACH LAUNCHED NEW PAGE\n"
-                        },
-                        {
-                          "text": "AFTER EACH CLOSED PAGE\n"
-                        },
-                        {
-                          "text": "AFTER ALL HOOK CLOSED BROWSER\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-15T17:42:59.612Z",
+                      "startTime": "2025-10-29T20:09:33.610Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/cjcpineda/Desktop/PlaywrightAutomation/test-results/hooksAndPage-Describe-block-for-hooks-A-B-Test-chromium/test-failed-1.png"
-                        }
-                      ],
+                      "attachments": [],
                       "errorLocation": {
                         "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
-                        "column": 24,
-                        "line": 44
+                        "column": 10,
+                        "line": 10
                       }
                     }
                   ],
@@ -160,60 +434,17 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "interrupted",
-                      "duration": 2708234,
-                      "error": {
-                        "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Checkboxes\"')\u001b[22m\n",
-                        "stack": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Checkboxes\"')\u001b[22m\n\n    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:48:20",
-                        "location": {
-                          "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
-                          "column": 20,
-                          "line": 48
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=Checkboxes'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mconst\u001b[39m checkbox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39misChecked(\u001b[32m'input [type=\"checkbox\"]:first-child'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m         expect(checkbox)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     })\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
-                            "column": 20,
-                            "line": 48
-                          },
-                          "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('text=Checkboxes\"')\u001b[22m\n\n\n\u001b[0m \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     test(\u001b[32m'Checkbox verification'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'text=Checkboxes'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m         \u001b[36mconst\u001b[39m checkbox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39misChecked(\u001b[32m'input [type=\"checkbox\"]:first-child'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m         expect(checkbox)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     })\u001b[0m\n\u001b[2m    at /Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js:48:20\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "BEFORE ALL HOOK LAUNCHED CHROMIUM BROWSER\n"
-                        },
-                        {
-                          "text": "BEFORE EACH LAUNCHED NEW PAGE\n"
-                        },
-                        {
-                          "text": "AFTER EACH CLOSED PAGE\n"
-                        },
-                        {
-                          "text": "AFTER ALL HOOK CLOSED BROWSER\n"
-                        }
-                      ],
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-15T17:43:01.181Z",
+                      "startTime": "2025-10-29T20:09:44.487Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/cjcpineda/Desktop/PlaywrightAutomation/test-results/hooksAndPage-Describe-block-for-hooks-Checkbox-verification-chromium/test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/cjcpineda/Desktop/PlaywrightAutomation/tests/hooksAndPage.spec.js",
-                        "column": 20,
-                        "line": 48
-                      }
+                      "attachments": []
                     }
                   ],
                   "status": "skipped"
@@ -235,7 +466,21 @@
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
-                  "results": [],
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-29T20:09:44.488Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
                   "status": "skipped"
                 }
               ],
@@ -247,14 +492,70 @@
           ]
         }
       ]
+    },
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "This is a login spec",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 10000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "badc1754af1944f68b2b-2abde6e5191c3cab22f9",
+          "file": "login.spec.js",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "selectors.spec.js",
+      "file": "selectors.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Learning selectors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 10000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "65090d1ebe65fa39cf9d-cefb45a0244e936ee235",
+          "file": "selectors.spec.js",
+          "line": 3,
+          "column": 5
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-15T17:42:59.108Z",
-    "duration": 2710653.972,
-    "expected": 0,
-    "skipped": 2,
+    "startTime": "2025-10-29T20:09:31.643Z",
+    "duration": 17619.525,
+    "expected": 1,
+    "skipped": 11,
     "unexpected": 1,
     "flaky": 0
   }
