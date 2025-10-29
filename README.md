@@ -101,5 +101,14 @@ Notes:
 - `test.descibe` is used to group related tests together (beforeAll, beforeEach) and teardown (afterEach, afterAll)
 
 ## Section 9
-#### Page Object Model
+#### Page Object Model(POM)
+DRY (Don't Repeat Yourself) and KISS (Keep It Simple, Stupid) principles 
+To create organized and maintainable test code by associating specific functions with each page of an application. Check out `pom_example` folder
+- `pomTests.spec.js` Primary test file. 
+- `CommonActions.js` Connects to the other page classes by providing the foundational actions needed for user interactions (navigate, click, fill, etc.)
+- `pages folder` utilizes the functions defined in commonActions.js
+  - `loginPage.js` This page object represents the login screen and includes methods for elements like the username and password input fields and the login button
+  - `securePage.js` After successful authentication, this file represents the next page where users land
+  - `checkboxesPage.js` This page object handles interactions related to checkbox elements
+
 
