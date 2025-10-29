@@ -67,6 +67,7 @@ We will focus on:
 - know the difference between `page.get<>` and `expect` 
 
 ## Section 7
+Running Tests & Config
 #### Running Tests & Config
 Some examples of running playwright tests (ui runner, smoke test, running test project level or global level, etc.) and discussing config file
 - running all tests `npx playwright test` 
@@ -100,4 +101,18 @@ Before sec. 8, we used ({page}) which was from playwright. Now, we manually crea
 
 Notes:
 - You can set your location in chrome under elements/ sensors --- check out the geolocation test
+- `test.descibe` is used to group related tests together (beforeAll, beforeEach) and teardown (afterEach, afterAll)
+
+## Section 9
+#### Page Object Model(POM)
+DRY (Don't Repeat Yourself) and KISS (Keep It Simple, Stupid) principles 
+To create organized and maintainable test code by associating specific functions with each page of an application. Check out `pom_example` folder
+- `pomTests.spec.js` Primary test file. 
+- `CommonActions.js` Connects to the other page classes by providing the foundational actions needed for user interactions (navigate, click, fill, etc.)
+- `pages folder` utilizes the functions defined in commonActions.js
+  - `loginPage.js` This page object represents the login screen and includes methods for elements like the username and password input fields and the login button
+  - `securePage.js` After successful authentication, this file represents the next page where users land
+  - `checkboxesPage.js` This page object handles interactions related to checkbox elements
+
+
 - `test.descibe` 
