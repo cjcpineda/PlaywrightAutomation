@@ -1,7 +1,7 @@
 # PlaywrightAutomation
 
 ## Section 1
-Playwright intro + env setup
+#### Playwright intro + env setup
 - playwright/test is a library that helps you write and run browser tests
 - run `npx playwright test` or `npx playwright codegen <url>`, playwright automatically creates a `tests`, `playwright-report`, and it can create example test files if you run npx playwright test in a new project 
 Commands to run a test: 
@@ -9,7 +9,8 @@ Commands to run a test:
 - npx playwright show-report
 
 ## Section 2
-Codegen with playwright
+#### Codegen with playwright
+
 Test site: https://the-internet.herokuapp.com/login
 - `npx playwright codegen https://the-internet.herokuapp.com/login`  launches Playwright Inspector. It records your actions (clicks, typing, etc.). Playwright automatically generates test code (usually in JavaScript, TypeScript, Python, or C#) that you can use for automated browser testing
 - hit record to track actions and the "eye-icon" for assertion. copy & paste into js file
@@ -18,7 +19,7 @@ Test site: https://the-internet.herokuapp.com/login
 - playwright inspector
 
 ## Section 3
-Understand codegen code
+#### Understand codegen code
 - `//test('Name of Test', async ({page}) => {})`
 - https://playwright.dev/docs/locators Locators in Playwright are expressions or methods used to find and interact with elements on a web page, such as buttons, input fields, or links. They help your tests identify exactly which element to click, type into, or check for visibility
 - you can also use dev tool (search by typing `$$`) or ask your dev team to create a unique_id for elements
@@ -27,7 +28,7 @@ Understand codegen code
 
 
 ## Section 4
-Build clickMe webpage
+#### Build clickMe webpage
 - check out clickMe.html
 - building a simple HTML to understand html structure and adding a script
 - basic structure: `<tag attribute="value>content</tag>`
@@ -52,14 +53,14 @@ Example: [class*="style"] selects elements with a class that includes "style".
 Example: text="CLICK ME" selects an element that shows "CLICK ME" on the page.
 
 ## Section 5
-How to find Selectors
+#### How to find Selectors
 We will focus on: 
 - selecting elements by id, class, tag name, attribute value, partial attribute value, visible text, playwright specific locators or by using ranorex selocity chrome plugin
 - check out `selectors.spec.js` file for details
 - install Ranorex plugin to help detect selectors
 
 ## Section 6
-Playwright Assertions
+#### Playwright Assertions
 - https://playwright.dev/docs/test-assertions Assertions are used to verify that your web application behaves as expected, such as checking if an element is visible, contains the correct text, or if a value matches what you expect
 - check out `assertions.spec.js` practice page: https://the-internet.herokuapp.com/ 
 - test.describe is used to group related tests together
@@ -67,6 +68,7 @@ Playwright Assertions
 
 ## Section 7
 Running Tests & Config
+#### Running Tests & Config
 Some examples of running playwright tests (ui runner, smoke test, running test project level or global level, etc.) and discussing config file
 - running all tests `npx playwright test` 
 - running a specific file: `npx playwright test <folder/filename>` 
@@ -85,6 +87,7 @@ Some examples of running playwright tests (ui runner, smoke test, running test p
   - Global setup or teardown step
 
 ## Section 8
+#### Setting Page & Hooks
 In Playwright, the built-in {page} is a fixture. Fixtures automatically set up and tear down resources needed for tests. Built in {page} provides a fresh page tab in a specific browser within a browser context for each test. It ensures that each test runs in isolation.
 However, sometimes you may need to set up the browser and context yourself to customize the configuration or manage multiple contexts. You can do this manually and organize the process using hooks such as beforeAll, afterAll, beforeEach, and afterEach:
   - beforeAll - hook is used to execute code before any tests in the test suite run. 
@@ -120,3 +123,4 @@ To create organized and maintainable test code by associating specific functions
 
 
 
+- `test.descibe` 
