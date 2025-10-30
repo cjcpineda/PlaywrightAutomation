@@ -121,6 +121,7 @@ To create organized and maintainable test code by associating specific functions
 2. add/ import SmethingPages.js in PomManager.js
 3. create the actual tests in `pomTests.spec.js`
 
-
-
 - `test.descibe` 
+ 
+ ## Section 10
+ Playwright API Testing  
