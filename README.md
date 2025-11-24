@@ -126,3 +126,4 @@ To create organized and maintainable test code by associating specific functions
  ## Section 10
  Playwright API Testing  
  - Verify request- uisng `reqres.in` and POSTMAN
+ - Setup GET, POST, PUT, and DELETE
